@@ -23,7 +23,6 @@
         <attr name="csPositions" format="string" />
     </declare-styleable>
 
-    <!-- 流光效果 -->
     <declare-styleable name="ShimmerTextView">
         <attr name="stvTextColor" format="color" />
         <attr name="stvShimmerColor" format="color" />
