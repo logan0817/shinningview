@@ -9,4 +9,6 @@
 ### DEMO
 1. Demo.apk [点击下载](apk/app-debug.apk)
 
+### 如果网络访问github加载不出来图片效果，国内用户可以访问该地址： [https://blog.csdn.net/notwalnut/article/details/136044650](https://blog.csdn.net/notwalnut/article/details/136044650) 
+
 
