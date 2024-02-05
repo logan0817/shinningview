@@ -3,13 +3,7 @@
 
 ### 效果如下
 
-1. ShimmerTextView
-
-![ShimmerTextView.gif](img%2FShimmerTextView.gif)
-
-2. ShimmerTextView
- 
-![ShimmerView.gif](img%2FShimmerView.gif)
+<img src="img%2FShimmerTextView.gif" width="288" height="640"/> <img src="img%2FShimmerView.gif" width="288" height="640"/>
 
 
 ### DEMO
