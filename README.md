@@ -40,7 +40,7 @@ This project aims to achieve a light and shadow movement effect on Android, know
 
 
 
-### If the image effect cannot be loaded when accessing GitHub online, ChinsChinese users can access this address: [https://blog.csdn.net/notwalnut/article/details/136044650](https://blog.csdn.net/notwalnut/article/details/136044650) 
+### If the image effect cannot be loaded when accessing GitHub online, Chinese users can access this address: [https://blog.csdn.net/notwalnut/article/details/136044650](https://blog.csdn.net/notwalnut/article/details/136044650) 
 
 
 
