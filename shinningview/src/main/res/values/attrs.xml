@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShimmerView">
+        <!--自动还是手动-->
+        <attr name="csAnimMode" format="enum">
+            <enum name="auto" value="0" />
+            <enum name="manual" value="1" />
+        </attr>
+        <!--光影宽度-->
+        <attr name="csWidth" format="dimension" />
+        <!--光影斜率 范围【-1 ~ 1】-->
+        <attr name="csSlope" format="float" />
+        <!--控件的圆角大小-->
+        <attr name="csRadius" format="dimension" />
+        <!-- -1:无限循环，0：其他代表重复执行几次-->
+        <attr name="csRepeat" format="integer" />
+        <!--动画时长 单位ms-->
+        <attr name="csDuration" format="integer" />
+        <!--颜色值 举例：{0x00FFFFFF, 0x88FFFFFF, 0x00FFFFFF}-->
+        <attr name="csColors" format="string" />
+        <!--颜色值对应的位置数组  (值范围0~1) 举例：[0f,0.5f,1f]  与csAngle数组大小必须一致-->
+        <attr name="csPositions" format="string" />
+    </declare-styleable>
+
+    <!-- 流光效果 -->
+    <declare-styleable name="ShimmerTextView">
+        <attr name="stvTextColor" format="color" />
+        <attr name="stvShimmerColor" format="color" />
+    </declare-styleable>
+
+</resources>

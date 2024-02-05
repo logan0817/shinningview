@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ShinningView</string>
+    <string name="action_star">赏个Star</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">ShimmerView</string>
+    <string name="second_fragment_label">ShimmerTextView</string>
+    <string name="next">Next ShimmerTextView</string>
+    <string name="previous">Previous ShimmerView</string>
+    <string name="github_com_project_url">https://github.com/logan0817/shinningview</string>
+</resources>
