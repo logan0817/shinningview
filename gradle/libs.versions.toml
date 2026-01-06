@@ -16,6 +16,7 @@ fragment_version = "1.8.3"
 constraint_layout_version = "2.2.1"
 navigation-fragment-ktx-version = "2.9.6"
 navigation-ui-ktx-version = "2.9.6"
+shinningview-version = "1.0.1"
 
 [libraries]
 agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
@@ -33,6 +34,7 @@ androidx_fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "
 androidx_constraint_layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraint_layout_version" }
 navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment-ktx-version" }
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-ui-ktx-version" }
+shinningview = { module = "io.github.logan0817:shinningview", version.ref = "shinningview-version" }
 
 [plugins]
 vanniktech-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktech-maven-publish" }

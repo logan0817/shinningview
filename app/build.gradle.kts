@@ -70,6 +70,7 @@ tasks.withType<KotlinCompile>().configureEach {
 
 dependencies {
     implementation(projects.shinningview)
+//    implementation(libs.shinningview)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity)
