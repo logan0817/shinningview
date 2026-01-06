@@ -33,7 +33,7 @@
    [![Maven Central](https://img.shields.io/maven-central/v/io.github.logan0817/shinningview.svg?label=Latest%20Release)](https://central.sonatype.com/artifact/io.github.logan0817/shinningview)
 
     ```gradle
-   implementation 'io.github.logan0817:shinningview:1.0.0' // 替换为上方徽章显示的最新版本
+   implementation 'io.github.logan0817:shinningview:1.0.1' // 替换为上方徽章显示的最新版本
     ```
 
 ## 背景流光效果效果使用：ShimmerView

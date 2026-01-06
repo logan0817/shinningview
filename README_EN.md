@@ -34,11 +34,11 @@ This project implements **shimmer / flowing light effects** on Android, includin
         mavenCentral()
     }
 
-2. Add the dependency in your **module-level** build.gradle
+2. Add the dependency in your **module-level** build.gradle    [![Maven Central](https://img.shields.io/maven-central/v/io.github.logan0817/shinningview.svg?label=Latest%20Release)](https://central.sonatype.com/artifact/io.github.logan0817/shinningview)
+
 
     ```gradle
-   implementation 'io.github.logan0817:shinningview:1.0.0'  
-   // Replace with the latest version shown on Maven Central
+   implementation 'io.github.logan0817:shinningview:1.0.1'   // Replace with the latest version shown on Maven Central
     ```
 ---
 
