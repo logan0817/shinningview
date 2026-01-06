@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.logandemo.shinningviewdemo.FirstFragment"
+        android:name="com.logan.shinningviewapp.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.logandemo.shinningviewdemo.SecondFragment"
+        android:name="com.logan.shinningviewapp.SecondFragment"
         android:label="@string/second_fragment_label"
         app:enterAnim="@anim/slide_in_right"
         app:exitAnim="@anim/slide_out_left"

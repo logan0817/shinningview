@@ -13,7 +13,7 @@
         <attr name="csSlope" format="float" />
         <!--控件的圆角大小-->
         <attr name="csRadius" format="dimension" />
-        <!-- -1:无限循环，0：其他代表重复执行几次-->
+        <!-- -1:无限循环，其他代表重复执行几次-->
         <attr name="csRepeat" format="integer" />
         <!--动画时长 单位ms-->
         <attr name="csDuration" format="integer" />
@@ -24,7 +24,9 @@
     </declare-styleable>
 
     <declare-styleable name="ShimmerTextView">
+        <!--  文本的「基础颜色 / 主颜色」 也是 shimmer 渐变的 起始色 & 结束色 -->
         <attr name="stvTextColor" format="color" />
+        <!--  闪光（shimmer）效果中间那一段“高亮颜色” -->
         <attr name="stvShimmerColor" format="color" />
     </declare-styleable>
 
