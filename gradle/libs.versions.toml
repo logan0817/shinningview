@@ -16,7 +16,7 @@ fragment_version = "1.8.3"
 constraint_layout_version = "2.2.1"
 navigation-fragment-ktx-version = "2.9.6"
 navigation-ui-ktx-version = "2.9.6"
-shinningview-version = "1.0.1"
+shinningview-version = "1.0.2"
 
 [libraries]
 agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
