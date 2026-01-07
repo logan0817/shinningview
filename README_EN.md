@@ -38,84 +38,70 @@ This project implements **shimmer / flowing light effects** on Android, includin
 
 
     ```gradle
-   implementation 'io.github.logan0817:shinningview:1.0.1'   // Replace with the latest version shown on Maven Central
+   implementation 'io.github.logan0817:shinningview:1.0.2'   // Replace with the latest version shown on Maven Central
     ```
----
+
+## Attributes
+
+| *Attribute*  | *Type*      |                                  *Description*                                  |
+|-------------|-----------:|:-------------------------------------------------------------------------------:|
+| svAnimMode  | enum      |                          Animation mode: 【auto、manual】                          |
+| svWidth     | dimension |                         Width of the shimmer highlight                          |
+| svSlope     | float     |                          Shimmer slope, range 【-1 ~ 1】                          |
+| svRepeat    | integer   |                  -1 for infinite loop, otherwise repeat count                   |
+| svDuration  | integer   |                       Animation duration in milliseconds                        |
+| svColors    | string    |             Color values, e.g. {0x00FFFFFF, 0x88FFFFFF, 0x00FFFFFF}             |
+| svPositions | string    |  Positions for each color (0~1), must match csColors length, e.g. [0f,0.5f,1f]  |
+| svRadius    | dimension |               Corner radius of the view ,only support ShimmerView               |
+
+
 
 ## Background Shimmer Effect: ShimmerView
 
     <com.logan.shinningview.ShimmerView
-        android:id="@+id/view1"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_first" />
+        android:id = "@+id/view1"
+        android:layout_width = "match_parent"
+        android:layout_height = "200dp"
+        android:background = "@color/black" />
 
     <com.logan.shinningview.ShimmerView
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/black"
-        app:csColors="#00FFFFFF,#5AFFFFFF,#00FFFFFF"
-        app:csPositions="0,0.5,1"
-        app:csRepeat="-1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view1" />
+        android:id = "@+id/view2"
+        android:layout_width = "match_parent"
+        android:layout_height = "200dp"
+        android:background = "@color/black"
+        app:svAnimMode = "auto"
+        app:svColors = "#00FFFFFF,#5AFFFFFF,#00FFFFFF"
+        app:svDuration = "2000"
+        app:svPositions = "0,0.5,1"
+        app:svRadius = "20dp"
+        app:svRepeat = "-1"
+        app:svSlope = "-1"/>
 
-### Attributes
-
-| Attribute | Type | Description                                                 |
-|----------|------|-------------------------------------------------------------|
-| csAnimMode | enum | Animation mode: 【auto、manual】                               |
-| csWidth | dimension | Width of the shimmer highlight                              |
-| csSlope | float | Shimmer slope, range 【-1 ~ 1】                               |
-| csRadius | dimension | Corner radius of the view                                   |
-| csRepeat | integer | -1 for infinite loop, otherwise repeat count                |
-| csDuration | integer | Animation duration in milliseconds                          |
-| csColors | string | Color values, e.g. {0x00FFFFFF, 0x88FFFFFF, 0x00FFFFFF}     |
-| csPositions | string | Positions for each color (0~1), must match csColors length, e.g. [0f,0.5f,1f] |
-
----
 
 ## Text Shimmer Effect: ShimmerTextView
 
     <com.logan.shinningview.ShimmerTextView
-        android:id="@+id/view1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/app_name"
-        android:textSize="37sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_Second" />
-
+        android:id = "@+id/view1"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/app_name"
+        android:textSize = "37sp" />
+    
     <com.logan.shinningview.ShimmerTextView
-        android:id="@+id/view2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/app_name"
-        android:textSize="37sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view1"
-        app:stvShimmerColor="#FF00FF"
-        app:stvTextColor="#116600" />
+        android:id = "@+id/view2"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/app_name"
+        android:textSize = "37sp"
+        app:svAnimMode = "auto"
+        app:svColors = "#FF00FF,#116600,#FF00FF"
+        app:svDuration = "2000"
+        app:svPositions = "0,0.5,1"
+        app:svRepeat = "-1"
+        app:svSlope = "-1" />
 
-### Attributes
 
-| Attribute | Type | Description |
-|----------|------|-------------|
-| stvTextColor | color | Base / primary text color. Also used as the start & end color of the shimmer gradient |
-| stvShimmerColor | color | Highlight color in the center of the shimmer effect |
-
----
+## If XML configuration cannot meet your needs, you can use code to control these parameters and animations. View encapsulates some corresponding public methods that can be called.
 
 ## Support
 

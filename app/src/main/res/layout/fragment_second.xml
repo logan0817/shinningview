@@ -45,8 +45,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view1"
-            app:stvShimmerColor="#FF00FF"
-            app:stvTextColor="#116600" />
+            app:svAnimMode="auto"
+            app:svColors="#FF00FF,#116600,#FF00FF"
+            app:svDuration="2000"
+            app:svPositions="0,0.5,1"
+            app:svRepeat="-1"
+            app:svSlope="-1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
